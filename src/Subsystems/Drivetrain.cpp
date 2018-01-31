@@ -49,13 +49,12 @@ void Drivetrain::Periodic() {
 
 }
 
+
+// Put methods for controlling this subsystem
+// here. Call these from Commands.
+
 void Drivetrain::Drive(std::shared_ptr<frc::Joystick> joystick) {
 	// For now we are just going to call arcadeDrive with squared inputs.
 	// Eventually we will call curvatureDrive or arcadeDrive with and without squared input as needed or desired by the driver.
 	differentialDrive->ArcadeDrive(joystick->GetY(), joystick->GetX(), true);
 }
-
-
-// Put methods for controlling this subsystem
-// here. Call these from Commands.
-

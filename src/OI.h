@@ -23,11 +23,11 @@ private:
 	
 	
 	std::shared_ptr<frc::Joystick> f310;
-	std::shared_ptr<frc::JoystickButton> button_b;
-	std::shared_ptr<frc::JoystickButton> button_A;
+	std::shared_ptr<frc::JoystickButton> f310_b;
+	std::shared_ptr<frc::JoystickButton> f310_a;
 	std::shared_ptr<frc::Joystick> xbox;
-	std::shared_ptr<frc::JoystickButton> square;
-	std::shared_ptr<frc::JoystickButton> circle;
+	std::shared_ptr<frc::JoystickButton> xbox_b;
+	std::shared_ptr<frc::JoystickButton> xbox_a;
 	std::shared_ptr<frc::Joystick> joystick;
 	std::shared_ptr<frc::JoystickButton> button_thumb;
 	std::shared_ptr<frc::JoystickButton> trigger;
