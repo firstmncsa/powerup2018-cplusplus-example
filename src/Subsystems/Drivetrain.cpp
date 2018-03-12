@@ -58,3 +58,10 @@ void Drivetrain::Drive(std::shared_ptr<frc::Joystick> joystick) {
 	// Eventually we will call curvatureDrive or arcadeDrive with and without squared input as needed or desired by the driver.
 	differentialDrive->ArcadeDrive(joystick->GetY(), joystick->GetX(), true);
 }
+
+void Drivetrain::straightDrive(double speed) {
+	// For now we are just going to call arcadeDrive with squared inputs.
+	// Eventually we will call curvatureDrive or arcadeDrive with and without squared input as needed or desired by the driver.
+	//differentialDrive->ArcadeDrive(joystick->GetY(), joystick->GetX(), true);
+	differentialDrive->ArcadeDrive(speed, 0, false);
+}
